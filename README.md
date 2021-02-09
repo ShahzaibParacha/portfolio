@@ -1,7 +1,7 @@
 # Portfolio: Redesigned
 
 # Home
-![Home](./sc/sc1.png)
+![Home](/sc/sc1.png)
 
 
 Created using:
