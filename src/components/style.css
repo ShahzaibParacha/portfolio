@@ -1,0 +1,400 @@
+body {
+  background-color: #4a154b;
+  font-family: monospace;
+  text-align: center;
+  color: #ecb22e;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* h1 {
+  font-size: xx-large;
+}*/
+
+.blinker {
+  height: 5px;
+  margin-bottom: -5px;
+  width: 25px;
+  background-color: #ecb22e;
+  opacity: 0;
+  display: inline-block;
+  animation: blink 0.55s linear infinite alternate;
+} 
+
+@media only screen and (min-width: 601px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: x-large;
+  }
+
+  li {
+    font-size: x-large;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .site-grid {
+    margin-top: 0px;
+    overflow-x: hidden;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-size: large;
+  }
+
+  h3 {
+    font-size: medium;
+  }
+
+  li {
+    font-size: medium;
+  }
+}
+
+h1::-moz-selection {
+  background-color: midnightblue;
+}
+
+h1::selection {
+  background-color: midnightblue;
+}
+
+h3::-moz-selection {
+  background-color: midnightblue;
+}
+
+h3::selection {
+  background-color: midnightblue;
+}
+
+li::-moz-selection {
+  background-color: midnightblue;
+}
+
+li::selection {
+  background-color: midnightblue;
+}
+
+a::-moz-selection {
+  background-color: midnightblue;
+}
+
+a::selection {
+  background-color: midnightblue;
+}
+
+br::-moz-selection {
+  background-color: midnightblue;
+}
+
+br::selection {
+  background-color: midnightblue;
+}
+
+span::-moz-selection {
+  background-color: midnightblue;
+}
+
+span::selection {
+  background-color: midnightblue;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.primary {
+  font-family: monospace;
+  text-align: left;
+  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  list-style: none;
+  color: #ecb22e;
+  transform: translateX(-50%) translateY(-50%);
+  line-height: 1;
+}
+
+#content {
+  margin: auto;
+  left: 1%;
+  right: 1%;
+  position: absolute;
+}
+
+.secondary {
+  font-family: monospace;
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 10%;
+  bottom: 0;
+  list-style: none;
+  font-size: x-large;
+  text-align: left;
+  color: #ecb22e;
+  display: list-item;
+  align-items: center;
+  transform: translateX(180%) translateY(-50%);
+  line-height: 1;
+  height: 20%;
+  width: 20%;
+}
+
+.secondary:not(:hover) > li {
+  opacity: 0.2;
+}
+
+.secondary:not(:hover) > h3 {
+  opacity: 0.2;
+}
+
+.secondary:hover > li {
+  opacity: 0.2;
+}
+
+.secondary:hover > li:hover {
+  opacity: 1;
+}
+
+.secondary:hover > h3 {
+  opacity: 0.2;
+}
+
+.secondary:hover > h3:hover {
+  opacity: 1;
+}
+
+.gg-chevron-right {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.gg-chevron-right::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  right: 6px;
+  top: 4px;
+}
+
+.gg-chevron-left {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.gg-chevron-left::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(45deg);
+  left: 6px;
+  top: 4px;
+}
+
+.gg-chevron-up {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.gg-chevron-up::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  left: 4px;
+  bottom: 2px;
+}
+
+.gg-chevron-down {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.gg-chevron-down::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  left: 4px;
+  top: 2px;
+}
+
+a:link {
+  color: #e01e5a;
+}
+
+/* visited link */
+a:visited {
+  color: #e01e5a;
+}
+
+/* mouse over link */
+a:hover {
+  color: #2eb67d;
+}
+
+/* selected link */
+a:active {
+  color: #36c5f0;
+}
+
+
+/* Animated Wave */
+/* .wave {
+    animation-name: wave-animation;   Refers to the name of your @keyframes element below 
+    animation-duration: 2.5s;         Change to speed up or slow down 
+    animation-iteration-count: infinite;   Never stop waving :) 
+    transform-origin: 70% 70%;        Pivot around the bottom-left palm 
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }   The following five values can be played with to make the waving more or less extreme 
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }   Reset for the last half to pause 
+    100% { transform: rotate( 0.0deg) }
+  } */
+
+/* 404 Bear */
+
+/* * {
+    box-sizing: border-box;
+  }
+  :root {
+    --fur: #662900;
+    --ear: #e4b89b;
+    --cap-strap--large: #f00;
+    --cap-strap--small: #900;
+    --cap: #0d0d0d;
+    --dots: rgba(242,242,242,0.6);
+    --frame: #000;
+    --shine: rgba(242,242,242,0.35);
+    --lens: #595959;
+    --code-one: rgba(128,230,25,0.5);
+    --code-two: rgba(229,230,25,0.5);
+    --code-three: rgba(230,25,128,0.5);
+    --code-four: rgba(25,195,230,0.5);
+  }
+  svg {
+    height: 50vmin;
+  }
+  .code-block {
+    -webkit-animation: read 1s infinite linear;
+            animation: read 1s infinite linear;
+  }
+  .code-block rect {
+    fill: var(--code-one);
+  }
+  .code-block rect:nth-of-type(5) {
+    fill: var(--code-four);
+  }
+  .code-block rect:nth-of-type(8),
+  .code-block rect:nth-of-type(9) {
+    fill: var(--code-two);
+  }
+  .code-block rect:nth-of-type(12) {
+    fill: var(--code-three);
+  }
+  .bear__fur,
+  .bear__outer-ear {
+    fill: var(--fur);
+  }
+  .bear__inner-ear,
+  .bear__muzzle {
+    fill: var(--ear);
+  }
+  .bear__cap-strap {
+    fill: var(--cap-strap--large);
+  }
+  .bear__small-cap-strap {
+    fill: var(--cap-strap--small);
+  }
+  .bear__cap {
+    fill: var(--cap);
+  }
+  .lens {
+    fill: var(--lens);
+  }
+  .lens__shine {
+    fill: var(--shine);
+  }
+  .shades-dot {
+    fill: var(--dots);
+  }
+  .shades-frame {
+    fill: var(--frame);
+  }
+  @-webkit-keyframes read {
+    to {
+      transform: translate(0, -283.5px);
+    }
+  }
+  @keyframes read {
+    to {
+      transform: translate(0, -283.5px);
+    }
+  } */
