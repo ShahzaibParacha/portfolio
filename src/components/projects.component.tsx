@@ -1,61 +1,49 @@
-import React, { Component } from "react";
-const Mousetrap = require("mousetrap");
+import React, { useState } from "react";
+import { useKeyPressEvent } from "react-use";
 
-const ProjectItem = {
-  id: BigInt,
-  desc: String,
-  name: String,
+const state = {
+  name: "jake",
+  desc: "blake",
 };
 
-interface Props {}
-interface State {
-  id: Number;
-  desc: string;
-  name: string;
-}
-export default class Project extends React.Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
+const Project = () => {
+  const Demo = () => {
+    const [udcount, setUDCount] = useState(10);
+    const [lrcount, setLRCount] = useState(10);
 
-    this.state = {
-      id: 1,
-      desc: "Hello",
-      name: "Proj 1",
-    };
 
-    //this.handleLeftClick = this.handleLeftClick.bind(this);
-    //this.handleRightClick = this.handleRightClick.bind(this);
-    //Mousetrap.bind('left', function() {  this.setState({ id:  - 1 });});
-  }
+    const incrementUD = () => setUDCount((udcount) => ++udcount);
+    const decrementUD = () => setUDCount((udcount) => --udcount);
+    const resetUD = () => setUDCount((udcount) => 0);
 
-  //   Mousetrap.bind('left', function() { handleLeft(e) });
+    const incrementLR = () => setLRCount((lrcount) => ++lrcount);
+    const decrementLR = () => setLRCount((lrcount) => --lrcount);
+    const resetLR = () => setLRCount((lrcount) => 0);
 
-  //   handleLeft(event) {
-  //     this.props.theFunction(this.state.id);
-  //   }
+    useKeyPressEvent("w", incrementUD);
+    useKeyPressEvent("s", decrementUD);
+    useKeyPressEvent("p", resetUD);
 
-  //Mousetrap.bind('left', function() { handleLeftClick(); });
-  //Mousetrap.bind('right', function() { console.log('right'); });
+    useKeyPressEvent("a", incrementLR);
+    useKeyPressEvent("d", decrementLR);
+    useKeyPressEvent("r", resetLR);
 
-  render() {
     return (
-      <body>
-        <div className="primary">
-          <div id="content"></div>
-          <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-          <script>
-            document.getElementById('content').innerHTML = marked('# Marked in
-            the browser\n\nRendered by **marked**.');
-          </script>
-          <h1>// project: {this.state.name}</h1>
-          <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-          <script>
-            document.getElementById('content').innerHTML = marked('# Marked in
-            the browser\n\nRendered by **marked**.');
-          </script>
-          <p>{this.state.desc}</p>
-        </div>
-      </body>
+      <div>
+        <h1>Count Up/Down: {udcount}</h1>
+        <h1>Count Left/Right: {lrcount}</h1>
+      </div>
     );
-  }
-}
+  };
+  return (
+    <body>
+      <div className="primary">
+        <h1>// project: {state.name}</h1>
+        <h1>{state.desc}</h1>
+        {Demo()}
+      </div>
+    </body>
+  );
+};
+
+export default Project;

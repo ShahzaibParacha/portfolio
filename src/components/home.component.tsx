@@ -1,8 +1,7 @@
-import React, { Component, useEffect, useRef } from "react";
+import React from "react";
 import "./style.css";
 
-export default class Home extends Component {
-  render() {
+const Home = () => {
     return (
       <body>
         <div className="primary">
@@ -19,7 +18,7 @@ export default class Home extends Component {
           <br />
           <br />
           <h1>
-            const portfolio ={" "}
+            const github = {" "}
             <a href="https://github.com/ShahzaibParacha">ShahzaibParacha</a>
           </h1>
           {
@@ -39,14 +38,14 @@ export default class Home extends Component {
               <span className="material-icons">expand_less</span>
               <span className="material-icons">expand_more</span> experience
             </li>
-            <li>who are you?</li>
-            <li>are you qualified?</li>
+            <li>r resume</li>
           </section>
         }
       </body>
     );
-  }
 }
 
 var today = new Date();
 const yyyy = today.getFullYear();
+
+export default Home;

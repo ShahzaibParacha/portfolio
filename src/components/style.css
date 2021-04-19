@@ -1,8 +1,8 @@
 body {
-  background-color: #4a154b;
+  background-color: #122335;
   font-family: monospace;
   text-align: center;
-  color: #ecb22e;
+  color: #ffd700;
   overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@ body {
   height: 5px;
   margin-bottom: -5px;
   width: 25px;
-  background-color: #ecb22e;
+  background-color: #ffd700;
   opacity: 0;
   display: inline-block;
   animation: blink 0.55s linear infinite alternate;
@@ -27,7 +27,7 @@ body {
 
 @media only screen and (min-width: 601px) {
   h1 {
-    font-size: 45px;
+    font-size: 35px;
   }
 
   h3 {
@@ -119,12 +119,12 @@ span::selection {
 .primary {
   font-family: monospace;
   text-align: left;
-  font-size: 50px;
+  font-size: 35px;
   position: absolute;
   left: 50%;
   top: 50%;
   list-style: none;
-  color: #ecb22e;
+  color: #ffd700;
   transform: translateX(-50%) translateY(-50%);
   line-height: 1;
 }
@@ -139,14 +139,14 @@ span::selection {
 .secondary {
   font-family: monospace;
   position: absolute;
-  left: 50%;
+  left: 48%;
   right: 0;
   top: 10%;
   bottom: 0;
   list-style: none;
   font-size: x-large;
   text-align: left;
-  color: #ecb22e;
+  color: #ffd700;
   display: list-item;
   align-items: center;
   transform: translateX(180%) translateY(-50%);
