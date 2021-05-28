@@ -93,9 +93,7 @@ const Display = () => {
   useKeyPressEvent("h", resetLR);
 
   useKeyPressEvent("r", showResume);
-
-  // <h1 class="animate__animated animate__bounce">An animated element</h1>
-
+  
   if (change === "Work") {
     return (
       <body>
