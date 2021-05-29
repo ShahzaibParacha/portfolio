@@ -37,6 +37,11 @@ const Work = [
     title: "Junior Machine Learning Engineer",
     description: "lvly",
   },
+  {
+    name: "Nixor College",
+    title: "Teaching Assistant",
+    description: "taught.",
+  },
 ];
 let change: string;
 
@@ -93,7 +98,7 @@ const Display = () => {
   useKeyPressEvent("h", resetLR);
 
   useKeyPressEvent("r", showResume);
-  
+
   if (change === "Work") {
     return (
       <body>
