@@ -8,6 +8,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
+
 html,
 body {
   overflow-x: hidden;
@@ -38,6 +40,12 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+
+  embed {
+    width: "950px";
+    height: "1200px";
+  }
+
   .site-grid {
     margin-top: 0px;
     overflow-x: hidden;
@@ -307,6 +315,10 @@ span::selection {
   top: 2px;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:link {
   color: #e01e5a;
 }
@@ -325,106 +337,6 @@ a:hover {
 a:active {
   color: #36c5f0;
 }
-
-/* Animated Wave */
-/* .wave {
-    animation-name: wave-animation;   Refers to the name of your @keyframes element below 
-    animation-duration: 2.5s;         Change to speed up or slow down 
-    animation-iteration-count: infinite;   Never stop waving :) 
-    transform-origin: 70% 70%;        Pivot around the bottom-left palm 
-    display: inline-block;
-  }
-  
-  @keyframes wave-animation {
-      0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }   The following five values can be played with to make the waving more or less extreme 
-     20% { transform: rotate(-8.0deg) }
-     30% { transform: rotate(14.0deg) }
-     40% { transform: rotate(-4.0deg) }
-     50% { transform: rotate(10.0deg) }
-     60% { transform: rotate( 0.0deg) }   Reset for the last half to pause 
-    100% { transform: rotate( 0.0deg) }
-  } */
-
-/* 404 Bear */
-
-/* * {
-    box-sizing: border-box;
-  }
-  :root {
-    --fur: #662900;
-    --ear: #e4b89b;
-    --cap-strap--large: #f00;
-    --cap-strap--small: #900;
-    --cap: #0d0d0d;
-    --dots: rgba(242,242,242,0.6);
-    --frame: #000;
-    --shine: rgba(242,242,242,0.35);
-    --lens: #595959;
-    --code-one: rgba(128,230,25,0.5);
-    --code-two: rgba(229,230,25,0.5);
-    --code-three: rgba(230,25,128,0.5);
-    --code-four: rgba(25,195,230,0.5);
-  }
-  svg {
-    height: 50vmin;
-  }
-  .code-block {
-    -webkit-animation: read 1s infinite linear;
-            animation: read 1s infinite linear;
-  }
-  .code-block rect {
-    fill: var(--code-one);
-  }
-  .code-block rect:nth-of-type(5) {
-    fill: var(--code-four);
-  }
-  .code-block rect:nth-of-type(8),
-  .code-block rect:nth-of-type(9) {
-    fill: var(--code-two);
-  }
-  .code-block rect:nth-of-type(12) {
-    fill: var(--code-three);
-  }
-  .bear__fur,
-  .bear__outer-ear {
-    fill: var(--fur);
-  }
-  .bear__inner-ear,
-  .bear__muzzle {
-    fill: var(--ear);
-  }
-  .bear__cap-strap {
-    fill: var(--cap-strap--large);
-  }
-  .bear__small-cap-strap {
-    fill: var(--cap-strap--small);
-  }
-  .bear__cap {
-    fill: var(--cap);
-  }
-  .lens {
-    fill: var(--lens);
-  }
-  .lens__shine {
-    fill: var(--shine);
-  }
-  .shades-dot {
-    fill: var(--dots);
-  }
-  .shades-frame {
-    fill: var(--frame);
-  }
-  @-webkit-keyframes read {
-    to {
-      transform: translate(0, -283.5px);
-    }
-  }
-  @keyframes read {
-    to {
-      transform: translate(0, -283.5px);
-    }
-  } */
 
 .navbar.transparent.navbar-inverse .navbar-inner {
   font-size: 20px;

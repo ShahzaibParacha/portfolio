@@ -5,23 +5,33 @@ import "./style.css";
 
 const Projects = [
   {
+    name: "Mapworks",
+    tag: "A web application to visualize the algorithm utilied by Google Maps on... a Map.",
+    github: "",
+    description: "",
+  },
+  {
+    name: "MageBank",
+    tag: "A web application that enables users to have a personal online Image Storage with caching, backed on the cloud with secure uploads and deletes.",
+    github: "https://github.com/ShahzaibParacha/MageBank",
+    description: "",
+  },
+  {
     name: "Go Ether Me",
-    tag: "decentralized crowdfunding",
+    tag: "A web application based on the Ethereum blockchain network allowing users to host projects for crowdfunding and fund existing projects, with eachproject and transaction recorded on the Blockchain.",
+    github: "https://github.com/ShahzaibParacha/Go-Ether-Me",
     description: "",
   },
   {
-    name: "Freadom",
-    tag: "track your readings",
-    description: "",
-  },
-  {
-    name: "noodle",
-    tag: "notes+doodle",
+    name: "SmartKitchen",
+    tag: "A list management system for kitchen inventory, grocery list, and recipes to allow users to manage inventory and meal prep with current inventory,designed and implemented with a group following Agile techniques and TDD.",
+    github: "https://github.com/ShahzaibParacha/SmartKitchen",
     description: "",
   },
   {
     name: "R-EMOTE",
-    tag: "access smart home from webcam",
+    tag: "An algorithm that implements a Convolutional Neural Network to detects hand gestures in real-time through your webcam to control smart appliances, and present the detected gesture as an animated emote.",
+    github: "https://github.com/ShahzaibParacha/R-Emote",
     description: "",
   },
 ];
@@ -29,18 +39,24 @@ const Projects = [
 const Work = [
   {
     name: "Upfeat",
+    title: "Junior Software Developer (Full Stack)",
+    description:
+      "i am contributing to revamp the visual appearance and overhaul the front-end performance of many of our White Label partner sites.",
+  },
+  {
+    name: "Upfeat",
     title: "Software Developer Co-op (Full Stack)",
-    description: "upft",
+    description: `i worked with the Laravel, MySql, VueJS stack using SCSS on the front-end. i contributed by adding features, caching, and changes 
+    on the front-end that rejuvenate the user experience of our affiliate pages that are served to our white label partners like business 
+    insider au, forbes, marie claire, news.com.au and more. i also worked with Elasticsearch to improve data collection for these partners.`,
   },
   {
     name: "Laivly",
     title: "Junior Machine Learning Engineer",
-    description: "lvly",
-  },
-  {
-    name: "Nixor College",
-    title: "Teaching Assistant",
-    description: "taught.",
+    description: `i worked on both internal and external tools surrounding machine learning. one of my prominent contributions was to train, test and
+     deploy transformer-based models for the cosmetics conglomerate Ulta Beauty who were looking to improve their email handling time, and the model performed near
+     lab accurate in beta testing. i also developed a data processing library and started developing a data cleaning pipeline to automate 
+     routine data cleaning tasks that would integrate with the automated internal machine learning pipeline.`,
   },
 ];
 let change: string;
@@ -102,6 +118,8 @@ const Display = () => {
   if (change === "Work") {
     return (
       <body>
+        <br />
+        <h2>my work in the industry</h2>
         <div className="primary">
           <h1>
             {lrcount + 1}. {Work[lrcount].name}
@@ -121,9 +139,12 @@ const Display = () => {
   } else if (change === "Project") {
     return (
       <body>
+        <br />
+        <h2>my personal projects</h2>
         <div className="primary">
           <h1>
-            {udcount + 1}. {Projects[udcount].name}
+            {udcount + 1}.{" "}
+            <a href={Projects[udcount].github}>{Projects[udcount].name} </a>
           </h1>
           <h3>{Projects[udcount].tag}</h3>
           <p>{Projects[udcount].description}</p>
@@ -169,16 +190,8 @@ const Display = () => {
       </body>
     );
   } else if (change === "Resume") {
-    history.push("Resume_ShahzaibParacha.pdf");
-    return (
-      <body>
-        {/* <div className="primary">
-          <a href="Resume_ShahzaibParacha.pdf" download>
-            <h1>resume</h1>
-          </a>
-        </div> */}
-      </body>
-    );
+    history.push("/resume");
+    return <body></body>;
   } else {
     return (
       <body>

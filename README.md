@@ -1,5 +1,5 @@
 # Portfolio: Redesigned
-### Note: This is a work in progress!
+### Work in progress!
 
 
 Created using:
