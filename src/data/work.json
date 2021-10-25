@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Upfeat",
+    "title": "Junior Software Developer (Full Stack)",
+    "description": "i am contributing to revamp the visual appearance and overhaul the front-end performance of many of our White Label partner sites."
+  },
+  {
+    "name": "Upfeat",
+    "title": "Software Developer Co-op (Full Stack)",
+    "description": "i worked with the Laravel, MySql, VueJS stack using SCSS on the front-end. i contributed by adding features, caching, and changes on the front-end that rejuvenate the user experience of our affiliate pages that are served to our white label partners like business insider au, forbes, marie claire, news.com.au and more. i also worked with Elasticsearch to improve data collection for these partners."
+  },
+  {
+    "name": "Laivly",
+    "title": "Junior Machine Learning Engineer",
+    "description": "i worked on both internal and external tools surrounding machine learning. one of my prominent contributions was to train, test and deploy transformer-based models for the cosmetics conglomerate Ulta Beauty who were looking to improve their email handling time, and the model performed near lab accurate in beta testing. i also developed a data processing library and started developing a data cleaning pipeline to automate routine data cleaning tasks that would integrate with the automated internal machine learning pipeline."
+  }
+]
