@@ -1,0 +1,26 @@
+[
+  {
+    "name": "MageBank",
+    "tag": "A web application that enables users to have a personal online Image Storage with caching, backed on the cloud with secure uploads and deletes.",
+    "github": "https://github.com/ShahzaibParacha/MageBank",
+    "description": "i designed MageBank to showcase how image stores can be made to be efficient and secure with the use of practices like caching, cloud storage, and secure requests so that personal/sensitive images do not result in unwanted deletes, leaks, or unauthorized use."
+  },
+  {
+    "name": "Go Ether Me",
+    "tag": "A web application based on the Ethereum blockchain network allowing users to host projects for crowdfunding and fund existing projects, with eachproject and transaction recorded on the Blockchain.",
+    "github": "https://github.com/ShahzaibParacha/Go-Ether-Me",
+    "description": "this was my final submission for my distributed systems class, which has been my personal favorite class so far. i use this app to demonstrate how a app can be created that is distributed by design, and can be used to address issues in existing systems at even a small scale with relative ease."
+  },
+  {
+    "name": "SmartKitchen",
+    "tag": "A list management system for kitchen inventory, grocery list, and recipes to allow users to manage inventory and meal prep with current inventory,designed and implemented with a group following Agile techniques and TDD.",
+    "github": "https://github.com/ShahzaibParacha/SmartKitchen",
+    "description": "i created SmartKitchen with my four other teammates, with the goal being to develop a fully working application that follows the best practices and modern design priciples like TDD and OOP. we were also the group that was praised by the professor for being the most swift in completing and covering the most ground which i contributed to by making the team work in scrums and working in sessions together for pair programming, instead of the more common 'laissez faire' approach."
+  },
+  {
+    "name": "R-EMOTE",
+    "tag": "An algorithm that implements a Convolutional Neural Network to detects hand gestures in real-time through your webcam to control smart appliances, and present the detected gesture as an animated emote.",
+    "github": "https://github.com/ShahzaibParacha/R-Emote",
+    "description": "this was my first dabble into ML. i was very excited of the prospects of ML but was lost in how to make something happen, so i ended up following documentations and tutorials to figure out keras, tensorflow and jupyter notebooks and made a hand gesture detection tool. was the coolest thing as a sophomore."
+  }
+]
